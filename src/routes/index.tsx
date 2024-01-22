@@ -1,13 +1,16 @@
-import { Routes } from "react-router-dom"
-import visitorRoutes from "./users/visitors"
+import { Navigate, Route, Routes } from "react-router-dom";
+import LandingLayout from "@pages/layout/LandingLayout";
+import HomePage from "@pages/landing/HomePage";
 
 const Routers = () => {
   return (
     <Routes>
-        {/* YOUR ROUTES HERE */}
-        {visitorRoutes()}
+      <Route path="*" element={<Navigate to="/" />} />
+      <Route element={<LandingLayout />}>
+        <Route path="/" element={<HomePage />} />
+      </Route>
     </Routes>
-  )
-}
+  );
+};
 
-export default Routers
+export default Routers;
