@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { Link, useLocation } from "react-router-dom";
-import LetsTalkButton from "./Menubar/LetsTalkButton";
+import LetsTalkButton from "./menubar/LetsTalkButton";
 
 const MenuBar = () => {
   const location = useLocation();

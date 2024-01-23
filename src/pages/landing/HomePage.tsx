@@ -1,6 +1,4 @@
-import { kpic } from "@assets/images";
-import HeroHome from "@components/landing/Home/HeroHome";
-import React from "react";
+import HeroHome from "@components/landing/home/HeroHome";
 
 const HomePage = () => {
   return (

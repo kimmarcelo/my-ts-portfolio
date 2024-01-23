@@ -1,10 +1,10 @@
 import { kpic } from "@assets/images";
-import React from "react";
+import HeroButton from "@hooks/landing/home/HeroButton";
 
 const HeroHome = () => {
   return (
     <div>
-      <div className=" flex flex-col items-center justify-center py-20 gap-y-5">
+      <div className=" flex flex-col items-center justify-center py-20 gap-y-8">
         <img
           className=" max-w-[300px] max-h-[300px] object-cover object-top w-full rounded-full"
           src={kpic}
@@ -20,6 +20,10 @@ const HeroHome = () => {
           I am a web developer specializing in React, passionate about creating
           dynamic and user-friendly web applications.
         </p>
+        <div className=" flex gap-x-10">
+          <HeroButton name="GET IN TOUCH" bgColor="white" textColor="black" />
+          <HeroButton name="VIEW ALL WORKS" bgColor="black" textColor="white" />
+        </div>
       </div>
     </div>
   );
