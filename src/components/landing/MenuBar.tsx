@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { Link, useLocation } from "react-router-dom";
+import LetsTalkButton from "./Menubar/LetsTalkButton";
 
 const MenuBar = () => {
   const location = useLocation();
@@ -32,9 +33,14 @@ const MenuBar = () => {
   ];
   console.log(active);
   return (
-    <div className=" px-20 py-4 flex justify-between items-center">
-      <menu className=" flex gap-x-10">
-        <h2 className=" px-10"> LOGO HERE</h2>
+    <div className=" px-20 py-8 flex justify-between items-end bg-[#161513]">
+      <menu className=" flex items-end gap-x-10">
+        <Link
+          to="/"
+          className=" px-10 text-white hover:text-yellow-500 hover:scale-105 font-semibold text-3xl no-underline"
+        >
+          KFOLIO.
+        </Link>
         {menuItems?.map((obj, i) => {
           if (active === obj.route) {
             return (
@@ -55,7 +61,7 @@ const MenuBar = () => {
               onClick={() => {
                 setActive(obj.route);
               }}
-              className=" text-black no-underline hover:text-yellow-500 text-lg"
+              className=" text-white no-underline hover:text-yellow-500 text-lg"
               to={obj.route}
               key={i}
             >
@@ -64,7 +70,8 @@ const MenuBar = () => {
           );
         })}
       </menu>
-      <h2 className=" px-10">BUTTON HERE</h2>
+      {/* <h2 className=" px-10">BUTTON HERE</h2> */}
+      <LetsTalkButton />
     </div>
   );
 };
