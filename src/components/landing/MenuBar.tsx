@@ -36,6 +36,7 @@ const MenuBar = () => {
     <div className=" px-20 py-8 flex justify-between items-end bg-[#161513]">
       <menu className=" flex items-end gap-x-10">
         <Link
+          draggable="false"
           to="/"
           className=" px-10 text-white hover:text-yellow-500 hover:scale-105 font-semibold text-3xl no-underline"
         >
@@ -45,6 +46,7 @@ const MenuBar = () => {
           if (active === obj.route) {
             return (
               <Link
+                draggable="false"
                 onClick={() => {
                   setActive(obj.route);
                 }}
@@ -58,6 +60,7 @@ const MenuBar = () => {
           }
           return (
             <Link
+              draggable="false"
               onClick={() => {
                 setActive(obj.route);
               }}
