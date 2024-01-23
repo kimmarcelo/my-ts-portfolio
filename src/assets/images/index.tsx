@@ -1,3 +1,3 @@
-import kpic from "./kpic.png";
+import kpic from "./kpic.jpeg";
 
 export { kpic };
