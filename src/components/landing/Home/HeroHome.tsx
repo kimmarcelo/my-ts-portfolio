@@ -6,6 +6,7 @@ const HeroHome = () => {
     <div>
       <div className=" flex flex-col items-center justify-center py-20 gap-y-8">
         <img
+          draggable="false"
           className=" max-w-[300px] max-h-[300px] object-cover object-top w-full rounded-full"
           src={kpic}
           alt="/"

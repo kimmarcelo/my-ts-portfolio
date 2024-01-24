@@ -12,7 +12,7 @@ const HeroButton: React.FC<HeroButtonProps> = ({
 }) => {
   return (
     <button
-      className={`bg-[${bgColor}] text-[${textColor}] py-4 px-10 text-lg font-light border-none rounded-3xl cursor-pointer hover:scale-105`}
+      className={`bg-[${bgColor}] text-[${textColor}] py-4 px-10 text-base font-light border-none rounded-3xl cursor-pointer hover:scale-105`}
       style={{
         backgroundColor: bgColor,
         color: textColor,
